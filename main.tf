@@ -1,6 +1,6 @@
 resource "aws_key_pair" "aws-kp" {
   key_name   = "aws_kp"
-  public_key = file("aws_kp.pem")
+  public_key = file("aws_kp.pub")
 }
 
 resource "aws_instance" "my_instance" {
